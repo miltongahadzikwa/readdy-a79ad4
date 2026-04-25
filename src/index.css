@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll animation performance optimization */
+[style*="opacity"] {
+  will-change: opacity, transform;
+}
+
+/* Ensure sections don't clip animations */
+section {
+  overflow: visible;
+}
